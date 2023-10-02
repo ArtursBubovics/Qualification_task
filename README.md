@@ -1,3 +1,3 @@
 # Qualification_task
 
-https://blv3dromazenkovs.000webhostapp.com/
+project link: https://blv3dromazenkovs.000webhostapp.com/
