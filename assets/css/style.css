@@ -128,6 +128,8 @@
 
 .body {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -149,6 +151,14 @@
   justify-content: space-evenly;
   width: 100%;
 }
+.navbar__burger {
+  display: none;
+}
+
+.burger {
+  width: 25px;
+  height: 20px;
+}
 
 .btn {
   border: none;
@@ -167,6 +177,11 @@
 }
 .wrapper__main {
   position: relative;
+}
+.wrapper__video-block {
+  position: absolute;
+  top: 50%;
+  left: 45%;
 }
 .wrapper__vector-under-photo {
   width: 100%;
@@ -374,11 +389,12 @@
   padding: 80px 75px 50px 55px;
 }
 .footer__left-block {
-  width: 35%;
+  width: auto;
   height: 100%;
+  margin-right: 10%;
 }
 .footer__right-block {
-  width: 75%;
+  width: 100%;
   height: 100%;
 }
 .footer__right-block-container {
@@ -392,7 +408,7 @@
   height: 228px;
 }
 .footer__fast-navigation {
-  width: 450px;
+  width: 33.3333333333%;
 }
 .footer__fast-navigation-btn {
   text-align: left;
@@ -400,7 +416,7 @@
   height: 14.2857142857%;
 }
 .footer__company-information {
-  width: 450px;
+  width: 33.3333333333%;
 }
 .footer__links-to-social-networks {
   display: flex;
@@ -408,7 +424,7 @@
   margin-top: 10px;
 }
 .footer__person-info-and-social-networks-links {
-  width: 450px;
+  width: 33.3333333333%;
 }
 .footer__people-contacts {
   display: flex;
@@ -438,4 +454,44 @@
 
 .information-h {
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1600px) {
+  .wrapper__photos {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .wrapper__photos {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .wrapper__photos {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .wrapper__photos {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .navbar__navigation {
+    display: none;
+  }
+  .navbar__burger {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .wrapper__photos {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wrapper__photos {
+    height: 250px;
+  }
 }/*# sourceMappingURL=style.css.map */
