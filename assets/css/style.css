@@ -1,4 +1,5 @@
-.text__h4-text-left-500-0em-black {
+@charset "UTF-8";
+.main-font {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -7,7 +8,7 @@
   text-align: left;
 }
 
-.text__h4-text-right-500-0em-black {
+.sub-title {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -16,7 +17,7 @@
   text-align: right;
 }
 
-.text__h4-text-center-500-0em-black {
+.navbar__language {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -25,7 +26,7 @@
   text-align: center;
 }
 
-.text__h4-text-center-400-0em-dark-blue {
+.wrapper__text {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -35,7 +36,7 @@
   color: #2F4858;
 }
 
-.text__h4-text-center-500-0em-dark-blue {
+.btn-content {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -45,7 +46,7 @@
   color: #2F4858;
 }
 
-.text__h3-text-center-500-36px-0em-dark-blue-oswald {
+.title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -55,7 +56,7 @@
   color: #2F4858;
 }
 
-.text__h4-text-left-400--0015em-dark-blue {
+.form-text {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -65,7 +66,7 @@
   color: #2F4858;
 }
 
-.text__left-400-0em-black {
+.form-checkbox-text {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -74,7 +75,7 @@
   text-align: left;
 }
 
-.text__h2-text-center-500-44px-0em-dark-blue-oswald {
+.form__title {
   font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 500;
@@ -84,7 +85,7 @@
   color: #2F4858;
 }
 
-.text__h3-text-left-500-0em {
+.additional-font {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -93,7 +94,7 @@
   text-align: left;
 }
 
-.text__h3-text-right-500-0em {
+.footer__person-information-title {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -102,34 +103,25 @@
   text-align: right;
 }
 
-.text__h5-text-right-500-0em-white {
+.footer__privacy-policy {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
   letter-spacing: 0em;
   text-align: right;
+}
+
+.footer__copyright {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+
+.text_white {
   color: #FFFFFF;
-}
-
-.text__white {
-  color: #FFFFFF;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-::-webkit-scrollbar {
-  width: 0;
-}
-
-.body {
-  position: relative;
-  width: 100%;
-  height: 100%;
 }
 
 .header {
@@ -143,13 +135,17 @@
 
 .navbar {
   display: flex;
-  margin: 0px 50px;
   justify-content: space-between;
+  padding: 0px 62px;
+}
+.navbar__logo {
+  margin-right: 84px;
 }
 .navbar__navigation {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
+  padding: 50px 0px 17px;
 }
 .navbar__burger {
   display: none;
@@ -161,9 +157,10 @@
 }
 
 .btn {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+  background-color: orange;
+  border-radius: 25px;
+  color: white;
+  padding: 14px 60px;
 }
 
 .page-link-text {
@@ -171,25 +168,36 @@
   text-decoration: none;
 }
 
+.body {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+}
+
+.title {
+  padding-bottom: 40px;
+}
+
 .wrapper {
-  width: auto;
-  height: auto;
+  width: 1366px;
 }
 .wrapper__main {
   position: relative;
+  max-width: 1366px;
 }
 .wrapper__video-block {
   position: absolute;
   top: 50%;
   left: 45%;
+  transform: translateY(-25%);
 }
 .wrapper__vector-under-photo {
-  width: 100%;
+  max-width: 1366px;
   position: absolute;
   top: 0;
 }
 .wrapper__near-header-foto {
-  width: 100%;
+  max-width: 1366px;
 }
 .wrapper__vector-photo {
   width: 100%;
@@ -197,56 +205,76 @@
 }
 .wrapper__block-text {
   display: flex;
-  width: 100%;
-  height: 500px;
+  max-width: 1366px;
+  height: 414px;
   align-items: center;
   justify-content: center;
 }
 .wrapper__text {
-  width: 35%;
+  width: 700px;
   height: auto;
 }
 .wrapper__photos {
   display: flex;
-  height: 500px;
+  height: 390px;
   position: relative;
 }
 .wrapper__regular-block {
-  width: 25%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
-.wrapper__vertical-photo {
-  width: 100%;
+.wrapper__first-foto {
+  width: 330px;
+  height: 390px;
+}
+.wrapper__second-foto {
+  width: 330px;
+  height: 400px;
+}
+.wrapper__third-foto {
+  width: 300px;
   height: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin-top: 15px;
+}
+.wrapper__fourth-foto {
+  width: 300px;
+  height: 50%;
+  margin-bottom: 10px;
 }
 .wrapper__paths {
   display: flex;
-  align-items: center;
   width: 100%;
-  height: 500px;
-  justify-content: space-evenly;
+  height: 435px;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper__path-firts .wrapper__h3::before {
+  content: "VĒLIES PIEPILDĪT SAVU SAPNI?";
+}
+.wrapper__path-second .wrapper__h3::before {
+  content: "VĒLIES PALĪDZĒT KĀDĀM PIEPILDĪT SAPNI?";
+}
+.wrapper__path-firts {
+  width: 432px;
+  padding-right: 20px;
+}
+.wrapper__path-second {
+  width: 500px;
+  padding-left: 100px;
 }
 .wrapper__paths-btns {
   display: flex;
   justify-content: center;
-}
-.wrapper-btn {
-  background-color: orange;
-  border-radius: 25px;
-  color: white;
-  padding: 13px 70px;
-  margin-top: 5px;
 }
 .wrapper-big-btn {
   border-radius: 30px;
 }
 .wrapper__supporters {
   width: 100%;
-  height: 480px;
+  height: 500px;
   background: url("../img/Vector_near_footer.svg");
   display: flex;
   justify-content: center;
@@ -254,14 +282,22 @@
 }
 .wrapper__supporters-container {
   width: 100%;
+  height: 242px;
+  margin-bottom: 60px;
 }
-.wrapper__supporters-h3 {
-  margin-bottom: 30px;
+.wrapper__supporters-title {
+  height: auto;
+  padding-bottom: 63px;
 }
 .wrapper__supporters-logos {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 85px;
+}
+
+.path-block {
+  height: 130px;
 }
 
 .wrapper__top-vector {
@@ -279,72 +315,77 @@
 }
 
 .main-photo {
-  width: 100%;
-  height: 100vh;
+  max-width: 1366px;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 765px;
+}
+
+.photo {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .photo-vector {
   width: 100%;
 }
 
-.photo {
-  width: 100%;
-  height: 100%;
-}
-
 .form {
   width: 100%;
-  height: 800px;
+  height: 818px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .form__container {
-  width: 700px;
+  width: 612px;
   height: 100%;
 }
 .form__title {
-  margin: 20px;
+  margin: 0px 0px 60px;
 }
 .form__field-block {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 .form__first-field {
   width: 49%;
-  height: 40px;
+  height: 43px;
 }
 .form__field {
   width: 100%;
-  height: 40px;
+  height: 43px;
 }
 .form__field-textarea {
   width: 100%;
-  height: 300px;
+  height: 232px;
   padding-top: 10px;
   overflow-y: auto;
   resize: none;
 }
-.form__btn-block {
-  display: flex;
-  justify-content: center;
+.form__required-field {
+  margin-bottom: 32px;
 }
 .form__btn {
-  padding: 15px 66px;
+  padding: 12px 64px;
 }
 .form__agree-block {
   display: flex;
   margin-top: 12px;
 }
-.form__agree-btn {
-  width: 16px;
+.form__checkbox-btn {
+  width: 32px;
   height: 16px;
-  border: none;
   background: rgba(196, 196, 196, 0.4);
-  border-radius: 1px;
+  border: none;
   margin-right: 15px;
+  border-radius: 1px;
+}
+.form__btn-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 52px;
 }
 
 .wrapper-big-btn {
@@ -358,8 +399,8 @@
   border: none;
   border-radius: 5px;
   background: rgba(196, 196, 196, 0.4);
-  margin-bottom: 10px;
-  padding: 15px;
+  margin-bottom: 15px;
+  padding: 13px;
 }
 
 .field::-moz-placeholder {
@@ -375,7 +416,7 @@
 }
 
 .footer {
-  width: 100%;
+  width: 1366px;
   height: 370px;
   background: url("../img/Vector_footer.svg");
   z-index: 100;
@@ -386,29 +427,34 @@
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 80px 75px 50px 55px;
+  padding: 70px 62px 8px 57px;
 }
 .footer__left-block {
-  width: auto;
+  width: 185px;
   height: 100%;
-  margin-right: 10%;
 }
 .footer__right-block {
   width: 100%;
   height: 100%;
+  padding-left: 142px;
 }
 .footer__right-block-container {
-  width: auto;
+  width: 100%;
+  height: 273px;
   display: flex;
   justify-content: flex-end;
 }
 .footer__top-wrapper-block {
   display: flex;
   justify-content: space-between;
-  height: 228px;
+  width: 100%;
+  height: 244px;
 }
 .footer__fast-navigation {
-  width: 33.3333333333%;
+  width: 219px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
 .footer__fast-navigation-btn {
   text-align: left;
@@ -421,7 +467,8 @@
 .footer__links-to-social-networks {
   display: flex;
   justify-content: flex-end;
-  margin-top: 10px;
+  margin-top: 52px;
+  gap: 5px;
 }
 .footer__person-info-and-social-networks-links {
   width: 33.3333333333%;
@@ -431,11 +478,11 @@
   justify-content: space-between;
   width: 100%;
 }
-.footer__text {
+.footer-text {
   width: 182px;
-  height: 78px;
+  height: 100px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 .footer__bottom-wrapper-block {
   display: flex;
@@ -444,54 +491,225 @@
   height: auto;
 }
 
+.footer-titles {
+  padding-bottom: 20px;
+}
+
 .link-to-social-network {
   margin-right: 20px;
 }
 
 .information-field {
   height: 24px;
+  margin-bottom: 6px;
 }
 
-.information-h {
-  margin-bottom: 5px;
+.information-field:last-child {
+  padding: 0;
 }
 
-@media screen and (max-width: 1600px) {
-  .wrapper__photos {
-    height: 450px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@media screen and (max-width: 1400px) {
-  .wrapper__photos {
-    height: 400px;
-  }
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
-@media screen and (max-width: 1300px) {
-  .wrapper__photos {
-    height: 350px;
-  }
+
+::-webkit-scrollbar {
+  width: 0;
 }
-@media screen and (max-width: 1200px) {
-  .wrapper__photos {
-    height: 350px;
-  }
+
+.container {
+  max-width: 1366px;
 }
-@media screen and (max-width: 1100px) {
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: auto;
+  }
+  .main-photo {
+    max-width: 1366px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 721px;
+    margin-top: 136px;
+  }
+  .logo {
+    width: 227px;
+    height: 149px;
+  }
+  .navbar__logo {
+    margin-right: 0;
+  }
+  .burger {
+    width: 45px;
+    height: 35px;
+  }
+  .navbar {
+    height: 140px;
+    padding: 0px 128px 0px 148px;
+  }
   .navbar__navigation {
     display: none;
   }
   .navbar__burger {
     display: flex;
     align-items: center;
+    padding-top: 23px;
   }
-}
-@media screen and (max-width: 1000px) {
-  .wrapper__photos {
-    height: 300px;
+  .wrapper__video-block {
+    height: auto;
+    left: 42%;
   }
-}
-@media screen and (max-width: 900px) {
-  .wrapper__photos {
-    height: 250px;
+  .wrapper__video-btn {
+    width: 222px;
+    height: 290px;
+  }
+  .wrapper__near-header-foto {
+    height: 221px;
+  }
+  .wrapper__block-text {
+    height: 789px;
+  }
+  .wrapper__text {
+    width: 1080px;
+    height: 239px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .wrapper__paths {
+    height: 840px;
+  }
+  .wrapper__path-firts {
+    width: 599px;
+    padding-right: 20px;
+  }
+  .wrapper__path-second {
+    width: 644px;
+    padding-left: 100px;
+  }
+  .path-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 255px;
+  }
+  .title {
+    padding-bottom: 142px;
+    width: 150px;
+    font-size: 32px;
+    line-height: 44px;
+    width: 384px;
+    height: 50px;
+  }
+  .btn {
+    border-radius: 60px;
+    padding: 34px 105px;
+  }
+  .btn-content {
+    font-size: 32px;
+  }
+  .wrapper__path-firts .wrapper__h3::before {
+    content: "VĒLIES PALĪDZĒT KĀDĀM PIEPILDĪT SAPNI?";
+  }
+  .wrapper__path-second .wrapper__h3::before {
+    content: "VĒLIES PIEPILDĪT SAVU SAPNI?";
+  }
+  .wrapper__paths-btns {
+    padding-top: 34px;
+  }
+  .form {
+    height: 1401px;
+  }
+  .form__title {
+    height: 50px;
+    margin: 0px 0px 116px;
+    font-size: 55px;
+  }
+  .form__container {
+    width: 1104px;
+  }
+  .field {
+    margin-bottom: 28px;
+    padding: 13px 20px;
+  }
+  .phone {
+    width: 100%;
+    height: 69px;
+  }
+  .form__first-field {
+    height: 70px;
+  }
+  .form__fields {
+    padding-left: 10px;
+  }
+  .name-and-surname {
+    width: 49%;
+  }
+  .gmail {
+    width: 48%;
+  }
+  .form__field-textarea {
+    height: 413px;
+    padding: 25px 20px;
+  }
+  .form-text {
+    font-size: 33px;
+  }
+  .form__required-field p {
+    height: 31px;
+  }
+  .form__required-field {
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+  .form-checkbox-text {
+    font-size: 25px;
+  }
+  .form__agree-text {
+    line-height: 30px;
+    padding-left: 50px;
+  }
+  .form__agree-block {
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+  .form__checkbox-btn {
+    margin-right: 0px;
+    width: 45px;
+    height: 30px;
+  }
+  .form__btn-block {
+    margin-top: 104px;
+  }
+  .form__btn {
+    padding: 54px 160px;
+    width: 320px;
+    height: 108px;
+    padding: 0;
+    text-align: center;
+  }
+  .form__btn-block .additional-font {
+    font-size: 40px;
+  }
+  .wrapper__supporters-title {
+    width: 100%;
+    font-size: 40px;
+    font-size: 45px;
+    height: 50px;
+    padding-bottom: 105px;
+  }
+  .footer {
+    height: 707px;
+    bottom: -625px;
+    background: url("../img/Vector_footer.svg") no-repeat center center;
+    background-size: cover;
   }
 }/*# sourceMappingURL=style.css.map */

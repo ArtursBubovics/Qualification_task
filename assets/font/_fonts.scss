@@ -7,7 +7,7 @@ $main-text-color: #2F4858;
 $text-color-white: #FFFFFF;
 ;
 
-.text__h4-text-left-500-0em-black {
+.main-font {
     font-family: $font-family-montserrat;
     font-size: 18px;
     font-weight: 500;
@@ -16,7 +16,7 @@ $text-color-white: #FFFFFF;
     text-align: left;
 }
 
-.text__h4-text-right-500-0em-black {
+.sub-title {
     font-family: $font-family-montserrat;
     font-size: 18px;
     font-weight: 500;
@@ -25,8 +25,9 @@ $text-color-white: #FFFFFF;
     text-align: right;
 }
 
-.text__h4-text-center-500-0em-black {
-    //
+
+
+.navbar__language {
     font-family: $font-family-montserrat;
     font-size: 18px;
     font-weight: 500;
@@ -35,7 +36,7 @@ $text-color-white: #FFFFFF;
     text-align: center;
 }
 
-.text__h4-text-center-400-0em-dark-blue {
+.wrapper__text {
     font-family: $font-family-montserrat;
     font-size: 18px;
     font-weight: 400;
@@ -45,7 +46,7 @@ $text-color-white: #FFFFFF;
     color: $main-text-color;
 }
 
-.text__h4-text-center-500-0em-dark-blue {
+.btn-content {
     font-family: $font-family-montserrat;
     font-size: 18px;
     font-weight: 500;
@@ -55,7 +56,7 @@ $text-color-white: #FFFFFF;
     color: $main-text-color;
 }
 
-.text__h3-text-center-500-36px-0em-dark-blue-oswald {
+.title {
     font-family: $font-family-oswald;
     font-size: 24px;
     font-weight: 500;
@@ -65,7 +66,7 @@ $text-color-white: #FFFFFF;
     color: $main-text-color;
 }
 
-.text__h4-text-left-400--0015em-dark-blue {
+.form-text {
     font-family: $font-family-montserrat;
     font-size: 18px;
     font-weight: 400;
@@ -75,7 +76,7 @@ $text-color-white: #FFFFFF;
     color: $main-text-color;
 }
 
-.text__left-400-0em-black{
+.form-checkbox-text {
     font-family: $font-family-montserrat;
     font-size: 14px;
     font-weight: 400;
@@ -84,7 +85,7 @@ $text-color-white: #FFFFFF;
     text-align: left;
 }
 
-.text__h2-text-center-500-44px-0em-dark-blue-oswald{
+.form__title {
     font-family: $font-family-oswald;
     font-size: 30px;
     font-weight: 500;
@@ -94,7 +95,7 @@ $text-color-white: #FFFFFF;
     color: $main-text-color;
 }
 
-.text__h3-text-left-500-0em{
+.additional-font {
     font-family: $font-family-montserrat;
     font-size: 24px;
     font-weight: 500;
@@ -103,7 +104,7 @@ $text-color-white: #FFFFFF;
     text-align: left;
 }
 
-.text__h3-text-right-500-0em{
+.footer__person-information-title {
     font-family: $font-family-montserrat;
     font-size: 24px;
     font-weight: 500;
@@ -112,16 +113,23 @@ $text-color-white: #FFFFFF;
     text-align: right;
 }
 
-.text__h5-text-right-500-0em-white{
+.footer__privacy-policy {
     font-family: $font-family-montserrat;
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
     letter-spacing: 0em;
     text-align: right;
-    color: $text-color-white;
 }
 
-.text__white {
+.footer__copyright {
+    font-family: $font-family-montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+}
+
+.text_white {
     color: $text-color-white;
 }

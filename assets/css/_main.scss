@@ -1,0 +1,294 @@
+$background-gray: #C4C4C466;
+
+.body {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+}
+
+.title {
+    padding-bottom: 40px;
+}
+
+.wrapper {
+    width: 1366px;
+
+    &__main {
+        position: relative;
+        max-width: 1366px;
+    }
+
+    &__video-block {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translateY(-25%);
+    }
+
+    &__vector-under-photo {
+        max-width: 1366px;
+        position: absolute;
+        top: 0;
+    }
+
+    &__near-header-foto {
+        max-width: 1366px;
+    }
+
+    &__vector-photo {
+        width: 100%;
+        z-index: 1000;
+    }
+
+    &__block-text {
+        display: flex;
+        max-width: 1366px;
+        height: 414px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        width: 700px;
+        height: auto;
+    }
+
+    &__photos {
+        display: flex;
+        height: 390px;
+        position: relative;
+    }
+
+    &__regular-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__first-foto {
+        width: 330px;
+        height: 390px;
+    }
+
+    &__second-foto {
+        width: 330px;
+        height: 400px;
+    }
+
+    &__third-foto {
+        width: 300px;
+        height: 50%;
+        margin-top: 15px;
+    }
+
+    &__fourth-foto {
+        width: 300px;
+        height: 50%;
+        margin-bottom: 10px;
+    }
+
+    // &__third-and-fourth-foto {
+    //     width: 300px;
+    //     height: 200px;
+    // }
+
+    // &__vertical-photo {
+    //     width: 100%;
+    //     height: 50%;
+    // }
+
+    &__paths {
+        display: flex;
+        width: 100%;
+        height: 435px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__path-firts .wrapper__h3::before {
+        content: "VĒLIES PIEPILDĪT SAVU SAPNI?";
+    }
+
+    &__path-second .wrapper__h3::before {
+        content: "VĒLIES PALĪDZĒT KĀDĀM PIEPILDĪT SAPNI?";
+    }
+
+    &__path-firts {
+        width: 432px;
+        padding-right: 20px;
+    }
+
+    &__path-second {
+        width: 500px;
+        padding-left: 100px;
+    }
+
+    // &_right-margin{
+    // }
+
+    &__paths-btns {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-big-btn {
+        border-radius: 30px;
+    }
+
+    &__supporters {
+        width: 100%;
+        height: 500px;
+        background: url("../img/Vector_near_footer.svg");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__supporters-container {
+        width: 100%;
+        height: 242px;
+        margin-bottom: 60px;
+    }
+
+    &__supporters-title {
+        height: auto;
+        padding-bottom: 63px;
+    }
+
+    &__supporters-logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 85px;
+    }
+
+}
+
+.path-block {
+    height: 130px;
+}
+
+.wrapper__top-vector {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+.wrapper__bottom-vector {
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    z-index: 5;
+}
+
+.main-photo {
+    max-width: 1366px;
+    object-fit: cover;
+    height: 765px;
+}
+
+.photo {
+    object-fit: contain;
+}
+
+.photo-vector {
+    width: 100%;
+}
+
+
+
+.form {
+    width: 100%;
+    height: 818px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+        width: 612px;
+        height: 100%;
+    }
+
+    &__title {
+        margin: 0px 0px 60px;
+    }
+
+    &__field-block {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__first-field {
+        width: 49%;
+        height: 43px;
+    }
+
+    &__field {
+        width: 100%;
+        height: 43px;
+    }
+
+    &__field-textarea {
+        width: 100%;
+        height: 232px;
+        padding-top: 10px;
+        overflow-y: auto;
+        resize: none;
+    }
+
+    &__required-field {
+        margin-bottom: 32px;
+    }
+
+    &__btn {
+        padding: 12px 64px;
+    }
+
+    &__agree-block {
+        display: flex;
+        margin-top: 12px;
+    }
+
+    &__checkbox-btn {
+        width: 32px;
+        height: 16px;
+        background: $background-gray;
+        border: none;
+        margin-right: 15px;
+        border-radius: 1px;
+    }
+
+    &__btn-block {
+        display: flex;
+        justify-content: center;
+        margin-top: 52px;
+    }
+
+}
+
+.wrapper-big-btn {
+    width: 182px;
+    height: 62px;
+    top: 2615px;
+    left: 592px
+}
+
+.field {
+    border: none;
+    border-radius: 5px;
+    background: $background-gray;
+    margin-bottom: 15px;
+    padding: 13px;
+}
+
+.field::placeholder {
+    color: $main-text-color;
+}
+
+.field:focus {
+    outline: none;
+}

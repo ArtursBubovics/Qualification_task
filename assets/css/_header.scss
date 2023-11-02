@@ -1,0 +1,46 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 62px;
+
+    &__logo {
+        margin-right: 84px;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 50px 0px 17px;
+    }
+
+    &__burger {
+        display: none;
+    }
+}
+
+.burger {
+    width: 25px;
+    height: 20px;
+}
+
+.btn {
+    background-color: orange;
+    border-radius: 25px;
+    color: white;
+    padding: 14px 60px;
+}
+
+.page-link-text {
+    color: black;
+    text-decoration: none;
+}

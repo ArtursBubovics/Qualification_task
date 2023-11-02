@@ -1,0 +1,22 @@
+{
+  "name": "task_2_arthurbubovich",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtursBubovics/Qualification_task.git"
+  },
+  "author": "ArtursBubovics",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtursBubovics/Qualification_task/issues"
+  },
+  "homepage": "https://github.com/ArtursBubovics/Qualification_task#readme",
+  "devDependencies": {
+    "eslint": "^8.51.0"
+  }
+}
